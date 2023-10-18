@@ -15,6 +15,32 @@ namespace pr4dhzzz31
         public Form1()
         {
             InitializeComponent();
+            Random random = new Random();
+            List<string> list = new List<string>()
+            {
+                "!", "!", "N", "N", ",",",", "k", "k",
+                "b", "b", "v", "v", "w", "w", "z", "z"
+
+            };
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void AssignIconsToSquares()
+        {
+            foreach (Control control in tableLayoutPanel1.Controls)
+            {
+                Label iconLabel = control as Label;
+                if (iconLabel!= null)
+                {
+                    int randomNumber = Random.Next(AssignIconsToSquares.Count);
+                    iconLabel.Text = 
+
+
+                }
+            }   
         }
     }
 }
