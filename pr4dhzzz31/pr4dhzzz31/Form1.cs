@@ -14,6 +14,7 @@ namespace pr4dhzzz31
     {
         public Form1()
         {
+            // Методы
             InitializeComponent();
             AssignIconsToSquares();
         }
